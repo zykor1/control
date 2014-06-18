@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>Bootstrap 3 Control Panel</title>
+		<title>Control</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
@@ -20,14 +20,14 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon-toggle"></span>
       </button>
-      <a class="navbar-brand" href="#">Control Panel</a>
+      <a class="navbar-brand" href="#">Control</a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         
         <li class="dropdown">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
-            <i class="glyphicon glyphicon-user"></i> {{ user }} <span class="caret"></span></a>
+            <i><img src="http://graph.facebook.com/{{ uid }}/picture?redirect=1&height=40&type=normal&width=40"></i> {{ user }} <span class="caret"></span></a>
           <ul id="g-account-menu" class="dropdown-menu" role="menu">
             <li><a href="#">Mi perfil</a></li>
             <li><a href="{% url 'logout' %}"><i class="glyphicon glyphicon-lock"></i> Desconectarme</a></li>
@@ -46,17 +46,17 @@
   <div class="row">
 	<div class="col-sm-3">
       <!-- left -->
-      <h3><i class="glyphicon glyphicon-briefcase"></i> Toolbox</h3>
+      <h3><i class="glyphicon glyphicon-briefcase"></i> Herramientas</h3>
       <hr>
       
       <ul class="nav nav-stacked">
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-flash"></i> Alerts</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-flash"></i> Alertas</a></li>
         <li><a href="javascript:;"><i class="glyphicon glyphicon-link"></i> Links</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i> Reports</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-book"></i> Books</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-briefcase"></i> Tools</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-time"></i> Real-time</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-plus"></i> Advanced..</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i> Reportes</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-book"></i> Libros</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-briefcase"></i> Herramientas</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-time"></i> En tiempo real</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-plus"></i> Avanzado</a></li>
       </ul>
       
       <hr>
@@ -72,30 +72,30 @@
 	   <div class="row">
             <!-- center left-->	
          	<div class="col-md-7">
-			  <div class="well">Inbox Messages <span class="badge pull-right">3</span></div>
+			  <div class="well">Bandeja de entrada <span class="badge pull-right">3</span></div>
               
               <hr>
               
               <div class="panel panel-default">
-                  <div class="panel-heading"><h4>Processing Status</h4></div>
+                  <div class="panel-heading"><h4>Estado</h4></div>
                   <div class="panel-body">
                     
-                    <small>Complete</small>
+                    <small>Completo</small>
                     <div class="progress">
-                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%">
-                        <span class="sr-only">72% Complete</span>
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                        <span class="sr-only">100% Complete</span>
                       </div>
                     </div>
-                    <small>In Progress</small>
+                    <small>En proceso</small>
                     <div class="progress">
                       <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                        <span class="sr-only">20% Complete</span>
+                        <span class="sr-only">20% Completo</span>
                       </div>
                     </div>
-                    <small>At Risk</small>
+                    <small>En riesgo</small>
                     <div class="progress">
                       <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                        <span class="sr-only">80% Complete</span>
+                        <span class="sr-only">80% Completo</span>
                       </div>
                     </div>
 
@@ -110,7 +110,7 @@
                 <ul class="nav nav-justified">
          			<li><a href="#"><i class="glyphicon glyphicon-cog"></i></a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-heart"></i></a></li>
-         			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-comment"></i><span class="count">3</span></a><ul class="dropdown-menu" role="menu"><li><a href="#">1. Is there a way..</a></li><li><a href="#">2. Hello, admin. I would..</a></li><li><a href="#"><strong>All messages</strong></a></li></ul></li>
+         			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-comment"></i><span class="count">3</span></a><ul class="dropdown-menu" role="menu"><li><a href="#">1. Notificacion 1..</a></li><li><a href="#">2. Notificacion 2..</a></li><li><a href="#"><strong>Ver todas</strong></a></li></ul></li>
          			<li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
          			<li><a title="Add Widget" data-toggle="modal" href="#addWidgetModal"><span class="glyphicon glyphicon-plus-sign"></span></a></li>
        			</ul>  

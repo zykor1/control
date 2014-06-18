@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'social.apps.django_app.default',
     'south',
     'usuarios',
+    'dashboard',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -110,3 +111,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 SOCIAL_AUTH_FACEBOOK_KEY = '188980267933208'
 SOCIAL_AUTH_FACEBOOK_SECRET = '5bc9b759bf791f7eb213e49d2d4ab28d'
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/dashboard'
+SOCIAL_AUTH_USERNAME_IS_FULL_EMAIL = True

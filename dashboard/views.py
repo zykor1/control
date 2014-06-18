@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
+@login_required(login_url='/login')
 def dashboard(request):
-	print "paso por aqui pero mando lo que quiero xD"
 	return render(request, 'dashboard.html', {},
         content_type="text/html")

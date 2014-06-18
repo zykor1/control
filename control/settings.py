@@ -36,6 +36,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'social.apps.django_app.default',
+    'south',
+    'usuarios',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -83,3 +86,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+AUTHENTICATION_BACKENDS = (
+    'social.backends.google.GoogleOAuth2',
+    'social.backends.twitter.TwitterOAuth',
+    'social.backends.facebook.Facebook2OAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
+    'social.apps.django_app.context_processors.backends',
+    'social.apps.django_app.context_processors.login_redirect',
+)
+
+SOCIAL_AUTH_FACEBOOK_KEY = '188980267933208'
+SOCIAL_AUTH_FACEBOOK_SECRET = '5bc9b759bf791f7eb213e49d2d4ab28d'

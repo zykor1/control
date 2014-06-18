@@ -1,9 +1,57 @@
+{% load staticfiles %}
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Control</title>
-</head>
-<body>
-	 <a href="{% url 'social:begin' 'facebook' %}">Login con Facebook</a>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Control</title>
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/cover.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Control</h3>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#">Descripcion</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Control</h1>
+            <p class="lead">Probando. Este mensaje es de prueba para ver como se ve, y no contiene informacion de valor para el lector.</p>
+            <p class="lead">
+              <a href="{% url 'social:begin' 'facebook' %}" class="btn btn-lg btn-default">Login con Facebook</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Creado por <a href="http://zykor.com.mx">Zykor</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+  </body>
 </html>

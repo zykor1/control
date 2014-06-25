@@ -40,6 +40,8 @@ INSTALLED_APPS = (
     'south',
     'usuarios',
     'dashboard',
+    'paypal',
+    'proyectos',
 )
 
 MIDDLEWARE_CLASSES = (
